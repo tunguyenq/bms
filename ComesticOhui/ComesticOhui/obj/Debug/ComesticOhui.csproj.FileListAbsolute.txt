@@ -30,6 +30,8 @@ I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.WebP
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.WebPages.dll
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.WebPages.Razor.dll
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\WebGrease.dll
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\EntityFramework.xml
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\EntityFramework.SqlServer.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.Helpers.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.Mvc.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.Optimization.xml
@@ -42,8 +44,6 @@ I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Antlr3.Runtime.
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Net.Http.Formatting.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.Http.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\System.Web.Http.WebHost.xml
-I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\EntityFramework.xml
-I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\EntityFramework.SqlServer.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.AspNet.Identity.Core.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.AspNet.Identity.Owin.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -56,6 +56,6 @@ I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.Security.Google.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.Security.Twitter.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.csprojResolveAssemblyReference.cache
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.dll
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.pdb
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.csprojResolveAssemblyReference.cache
