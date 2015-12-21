@@ -1,0 +1,9 @@
+﻿@model IEnumerable<ComesticOhui.Models.DTO.CategoryDTO>
+
+<label>
+    @foreach (var item in Model)
+    {
+        <input name="[]" value="@item.Value" type="checkbox" class="minimal" />  @item.Name<br/>
+       
+    }
+</label>

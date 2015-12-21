@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using ComesticOhui.Models;
 using ComesticOhui.Models.DAL;
+using ComesticOhui.Models.DTO;
 
 namespace ComesticOhui.Areas.admin.Controllers
 {
@@ -21,6 +22,13 @@ namespace ComesticOhui.Areas.admin.Controllers
             return View(db.Taxonomies.ToList());
         }
 
+        public ActionResult GetCategoriesByProductId(int id)
+        {
+            CategoryDTO cateDTO = new CategoryDTO();
+            
+            return View(cateDTO.getCategoriesByProductId(id));
+
+        }
         // GET: admin/Categories/Details/5
         public ActionResult Details(int? id)
         {

@@ -175,6 +175,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\admin\adminAreaRegistration.cs" />
     <Compile Include="Areas\admin\Controllers\CategoriesController.cs" />
+    <Compile Include="Areas\admin\Controllers\CompaniesController.cs" />
     <Compile Include="Areas\admin\Controllers\ProductsController.cs" />
     <Compile Include="Areas\admin\Controllers\SiteController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -190,8 +191,17 @@
     <Compile Include="Migrations\201512210840416_remove parent_id.Designer.cs">
       <DependentUpon>201512210840416_remove parent_id.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512211159167_add_company.cs" />
+    <Compile Include="Migrations\201512211159167_add_company.Designer.cs">
+      <DependentUpon>201512211159167_add_company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512211207137_foreign_key.cs" />
+    <Compile Include="Migrations\201512211207137_foreign_key.Designer.cs">
+      <DependentUpon>201512211207137_foreign_key.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\DAL\BmsContext.cs" />
     <Compile Include="Models\DAL\BmsInitializer.cs" />
     <Compile Include="Models\DTO\CategoryDTO.cs" />
@@ -1174,6 +1184,12 @@
     <Content Include="Areas\admin\Views\Categories\Details.cshtml" />
     <Content Include="Areas\admin\Views\Categories\Edit.cshtml" />
     <Content Include="Areas\admin\Views\Categories\Index.cshtml" />
+    <Content Include="Areas\admin\Views\Categories\GetCategoriesByProductId.cshtml" />
+    <Content Include="Areas\admin\Views\Companies\Create.cshtml" />
+    <Content Include="Areas\admin\Views\Companies\Delete.cshtml" />
+    <Content Include="Areas\admin\Views\Companies\Details.cshtml" />
+    <Content Include="Areas\admin\Views\Companies\Edit.cshtml" />
+    <Content Include="Areas\admin\Views\Companies\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1237,6 +1253,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512210840416_remove parent_id.resx">
       <DependentUpon>201512210840416_remove parent_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512211159167_add_company.resx">
+      <DependentUpon>201512211159167_add_company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512211207137_foreign_key.resx">
+      <DependentUpon>201512211207137_foreign_key.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

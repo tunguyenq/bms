@@ -21,8 +21,8 @@ namespace ComesticOhui.Models
         public DateTime Post_Modifield { get; set; }
         public int IsDeleted { get; set; }
         public int Author { get; set; }
-      
 
+        public virtual Company Company { get; set; }
         public virtual ICollection<Category_Product> Category_Product { get; set; }
     }
 }

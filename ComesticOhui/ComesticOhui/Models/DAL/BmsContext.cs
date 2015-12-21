@@ -16,7 +16,7 @@ namespace ComesticOhui.Models.DAL
         public DbSet<Product> Posts { get; set; }
         public DbSet<Category> Taxonomies { get; set; }
         public DbSet<Category_Product> Category_Product { get; set; }
-
+        public DbSet<Company> Companies { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

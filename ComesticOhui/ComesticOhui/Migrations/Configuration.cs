@@ -25,13 +25,13 @@ namespace ComesticOhui.Migrations
             //context.SaveChanges();
 
 
-            var Taxonomies = new List<Category>
-            {
-                new Category{Name = "tax1", Tax_Type = "Category", IsDeleted = 0, Slug= "tax1", Date_Add = DateTime.Parse("2015-09-01"),Date_modified = DateTime.Parse("2015-09-01")},
-            };
+            //var Taxonomies = new List<Category>
+            //{
+            //    new Category{Name = "tax1", Tax_Type = "Category", IsDeleted = 0, Slug= "tax1", Date_Add = DateTime.Parse("2015-09-01"),Date_modified = DateTime.Parse("2015-09-01")},
+            //};
 
-            Taxonomies.ForEach(s => context.Taxonomies.Add(s));
-            context.SaveChanges();
+            //Taxonomies.ForEach(s => context.Taxonomies.Add(s));
+            //context.SaveChanges();
 
             //var Post_taxs = new List<Post_Tax>
             //{

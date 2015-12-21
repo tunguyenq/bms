@@ -11,108 +11,107 @@ using ComesticOhui.Models.DAL;
 
 namespace ComesticOhui.Areas.admin.Controllers
 {
-    public class ProductsController : Controller
+    public class CompaniesController : Controller
     {
         private BmsContext db = new BmsContext();
 
-        // GET: admin/Products
+        // GET: admin/Companies
         public ActionResult Index()
         {
-            ViewBag.treeview = "product";
-            return View(db.Posts.ToList());
+            return View(db.Companies.ToList());
         }
 
-        // GET: admin/Products/Details/5
+        // GET: admin/Companies/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Posts.Find(id);
-            if (product == null)
+            Company company = db.Companies.Find(id);
+            if (company == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(company);
         }
 
-        // GET: admin/Products/Create
+        // GET: admin/Companies/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: admin/Products/Create
+        // POST: admin/Companies/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Parent_Id,Post_type,Slug,Post_date,Title,Excerpt,Post_Status,Name,Post_Modifield,IsDeleted,Author")] Product product)
+        public ActionResult Create([Bind(Include = "Id,Name,Slug,IsDeleted,State")] Company company)
         {
             if (ModelState.IsValid)
             {
-                db.Posts.Add(product);
+                db.Companies.Add(company);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(product);
+            return View(company);
         }
 
-        // GET: admin/Products/Edit/5
+        // GET: admin/Companies/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Posts.Find(id);
-            if (product == null)
+            Company company = db.Companies.Find(id);
+            if (company == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(company);
         }
 
-        // POST: admin/Products/Edit/5
+        // POST: admin/Companies/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Parent_Id,Post_type,Slug,Post_date,Title,Excerpt,Post_Status,Name,Post_Modifield,IsDeleted,Author")] Product product)
+        public ActionResult Edit([Bind(Include = "Id,Name,Slug,IsDeleted,State")] Company company)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
+                db.Entry(company).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(product);
+            return View(company);
         }
 
-        // GET: admin/Products/Delete/5
+        // GET: admin/Companies/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Posts.Find(id);
-            if (product == null)
+            Company company = db.Companies.Find(id);
+            if (company == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(company);
         }
 
-        // POST: admin/Products/Delete/5
+        // POST: admin/Companies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Product product = db.Posts.Find(id);
-            db.Posts.Remove(product);
+            Company company = db.Companies.Find(id);
+            db.Companies.Remove(company);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
