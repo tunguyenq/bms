@@ -174,12 +174,21 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\admin\adminAreaRegistration.cs" />
-    <Compile Include="Areas\admin\Controllers\PostController.cs" />
+    <Compile Include="Areas\admin\Controllers\CategoriesController.cs" />
+    <Compile Include="Areas\admin\Controllers\ProductsController.cs" />
     <Compile Include="Areas\admin\Controllers\SiteController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512210546286_create.cs" />
+    <Compile Include="Migrations\201512210546286_create.Designer.cs">
+      <DependentUpon>201512210546286_create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512210840416_remove parent_id.cs" />
+    <Compile Include="Migrations\201512210840416_remove parent_id.Designer.cs">
+      <DependentUpon>201512210840416_remove parent_id.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -188,11 +197,13 @@
     <Compile Include="Models\DTO\CategoryDTO.cs" />
     <Compile Include="Models\DTO\ProductDTO.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Post.cs" />
-    <Compile Include="Models\Post_Tax.cs" />
-    <Compile Include="Models\Taxonomy.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Category_Product.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Sys\SysHelp.cs" />
+    <Compile Include="Sys\SysModel\Post.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\admin\bootstrap\css\bootstrap.css" />
@@ -1148,11 +1159,21 @@
     <Content Include="Content\assets\admin\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="Areas\admin\Views\web.config" />
     <Content Include="Areas\admin\Views\Site\Index.cshtml" />
-    <Content Include="Areas\admin\Views\Post\Create.cshtml" />
-    <Content Include="Areas\admin\Views\Post\Delete.cshtml" />
-    <Content Include="Areas\admin\Views\Post\Details.cshtml" />
-    <Content Include="Areas\admin\Views\Post\Edit.cshtml" />
-    <Content Include="Areas\admin\Views\Post\Index.cshtml" />
+    <Content Include="Areas\admin\Views\Category\Create.cshtml" />
+    <Content Include="Areas\admin\Views\Category\Delete.cshtml" />
+    <Content Include="Areas\admin\Views\Category\Details.cshtml" />
+    <Content Include="Areas\admin\Views\Category\Edit.cshtml" />
+    <Content Include="Areas\admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\admin\Views\Products\Create.cshtml" />
+    <Content Include="Areas\admin\Views\Products\Delete.cshtml" />
+    <Content Include="Areas\admin\Views\Products\Details.cshtml" />
+    <Content Include="Areas\admin\Views\Products\Edit.cshtml" />
+    <Content Include="Areas\admin\Views\Products\Index.cshtml" />
+    <Content Include="Areas\admin\Views\Categories\Create.cshtml" />
+    <Content Include="Areas\admin\Views\Categories\Delete.cshtml" />
+    <Content Include="Areas\admin\Views\Categories\Details.cshtml" />
+    <Content Include="Areas\admin\Views\Categories\Edit.cshtml" />
+    <Content Include="Areas\admin\Views\Categories\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1165,6 +1186,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Sys\config.json" />
     <None Include="Views\Shared\admin\_Layout.cshtml" />
     <None Include="Views\Shared\admin\login.cshtml" />
     <Content Include="Web.config">
@@ -1194,6 +1216,7 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\admin\_sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1207,6 +1230,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512210546286_create.resx">
+      <DependentUpon>201512210546286_create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512210840416_remove parent_id.resx">
+      <DependentUpon>201512210840416_remove parent_id.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

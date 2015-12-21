@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace ComesticOhui.Models.DTO
 {
@@ -15,31 +16,10 @@ namespace ComesticOhui.Models.DTO
 
 
         private BmsContext db = new BmsContext();
-        public IQueryable<CategoryDTO> getCategory(int id)
-        {
+      
 
-            var category = from b in db.Posts
-                           select new CategoryDTO(){
-                               Id = b.Id,
-                               Slug = b.Slug,
-                               Name = b.Name,
-                               IsDeleted = b.IsDeleted
-                           };
-            return category;
-        }
 
-        public IQueryable<CategoryDTO> getCategory()
-        {
-            var category = from b in db.Posts where b.IsDeleted == 0
-                           select new CategoryDTO()
-                           {
-                               Id = b.Id,
-                               Slug = b.Slug,
-                               Name = b.Name,
-                               IsDeleted = b.IsDeleted
-                           };
-            return category;
-        }
+       
 
     }
 

@@ -1,0 +1,49 @@
+﻿{
+		"posts" :[
+	  {
+		"type": "post",
+		"title": "this is title",
+		"metas": [
+			{
+				"title": "Tên sản phẩm",
+				"type": "text",
+				"name": "name1",
+				"class": "form-control",
+				"Placeholder": "Vui lòng nhập title",
+				data_atr: " ",
+			},
+			{
+				"title": "Mô tả chi tiết",
+				"type": "text",
+				"name": "name1",
+				"class": "form-control",
+				"Placeholder": "Vui lòng nhập trường này",
+				data_atr: "d",
+			},
+			{
+				"title": "Giá",
+				"type": "text",
+				"name": "name1",
+				"class": "form-control",
+				"Placeholder": "Vui lòng nhâp giá sản phẩm",
+				data_atr: "d",
+			},
+		]
+	  },
+	  {
+		"type": "tag",
+		"title": "this is title",
+		"metas": [
+			{
+				"title": "Tu Nguyen",
+				"type": "text",
+				"name": "name1",
+				"class": "form-control",
+				"Placeholder": "Vui lòng nhập title",
+				data_atr: "",
+			}
+		]
+	  }
+	],
+	"category": "new items"
+}

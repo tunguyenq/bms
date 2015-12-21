@@ -56,6 +56,9 @@ I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.Security.Google.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.Security.Twitter.xml
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.csprojResolveAssemblyReference.cache
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.dll
 I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.pdb
-I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.csprojResolveAssemblyReference.cache
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.Migrations.create.resources
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.csproj.GenerateResource.Cache
+I:\project\Mine\mypham-Ohui\source\ComesticOhui\ComesticOhui\obj\Debug\ComesticOhui.Migrations.removeparent_id.resources
